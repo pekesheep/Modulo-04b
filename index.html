@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+    <link rel="stylesheet" href="site.css">
+</head>
+
+<body>
+    <header id="title">
+        <h1 id="main-header">Calculadora</h1>
+        <h3>Inserte un número</h3>
+    </header>
+    <div class="campos-numericos">
+        <input type="number" onclick="this.select();" id="valor-numerico" onkeyup="activarBoton()" autofocus>
+    </div>
+    <div class="operadores">
+        <button id="boton-suma" onclick="suma()">+</button>
+        <button id="boton-resta" onclick="resta()">-</button>
+        <button id="boton-multiplica" onclick="multiplica()">*</button>
+        <button id="boton-divide" onclick="divide()">/</button>
+    </div>
+    <div class="resultado">
+        <button id="boton-resultado" onclick="resultado()" disabled="disabled">Resultado</button>
+        <button id="limpiar-registro" onclick="limpiaRegistro()">C</button>
+    </div>
+    <div class="resultado">
+        <span id="texto-resultado"></span>
+    </div>
+    <div class="resultado">
+        <span id="valor-resultado"></span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
